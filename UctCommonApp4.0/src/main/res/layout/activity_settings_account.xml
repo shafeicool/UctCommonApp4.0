@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ptyt.uct.activity.SettingsAccountActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y500">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"
+        android:layout_marginTop="@dimen/y40"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_modify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/selector_press_background"
+        android:paddingLeft="@dimen/x32"
+        android:paddingRight="@dimen/x8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/string_settings_account_modify_password"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y32"/>
+
+        <ImageView
+            android:layout_width="@dimen/y64"
+            android:layout_height="@dimen/y64"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/icon_more"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y140"
+        android:background="@color/colorline04"/>
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/selector_press_background"
+        android:gravity="center"
+        android:text="@string/string_settings_account_exit"
+        android:textColor="@color/colorTextView_18"
+        android:textSize="@dimen/y32"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+</LinearLayout>

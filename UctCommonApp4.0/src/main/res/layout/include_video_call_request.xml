@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_videoRequest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_video_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_requestAvatar"
+        android:layout_width="@dimen/y120"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y150"
+        android:src="@mipmap/head_shouji_online"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_requestUserName"
+        style="@style/view_wrap_content"
+        android:layout_marginTop="@dimen/y30"
+        android:text="UserName"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/y46"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_requestAvatar"
+        android:lines="1"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:id="@+id/tv_businessTypeRequest"
+        style="@style/view_wrap_content"
+        android:text="@string/string_audio_calling"
+        android:textColor="@color/colorTextView_03"
+        android:textSize="@dimen/y30"
+        android:layout_below="@+id/tv_requestUserName"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_audioSpeakTimeRequest"
+        style="@style/tv2et_wrap_content_16sp"
+        android:textColor="@color/colorTextView_03"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ll"
+        android:layout_marginBottom="@dimen/y50"
+        />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x278"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:id="@+id/ll_voiceSilenceRequest"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            >
+            <ImageView
+                android:id="@+id/iv_voiceSilenceRequest"
+                android:layout_width="@dimen/y130"
+                android:layout_height="@dimen/y130"
+                android:src="@drawable/btn_mute_nor" />
+
+            <TextView
+                style="@style/tv2et_wrap_content_12sp"
+                android:text="@string/string_silence"
+                android:textColor="@color/colorTextView_03"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y32"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_cancelRequest"
+                android:layout_width="@dimen/y130"
+                android:layout_height="@dimen/y130"
+                android:src="@drawable/selector_hang_up_single" />
+
+            <TextView
+                android:id="@+id/tv_cancelRequest"
+                style="@style/tv2et_wrap_content_12sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y32"
+                android:text="@string/string_cancel"
+                android:textColor="@color/colorTextView_03"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_answerRequest"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_answerRequest"
+                android:layout_width="@dimen/y130"
+                android:layout_height="@dimen/y130"
+                android:src="@drawable/selector_answer_single" />
+
+            <TextView
+                android:id="@+id/tv_answerRequest"
+                style="@style/tv2et_wrap_content_12sp"
+                android:layout_marginTop="@dimen/y22"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorTextView_03"
+                android:text="@string/string_answer" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_handsFreeRequest"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/iv_handsFreeRequest"
+                android:layout_width="@dimen/y130"
+                android:layout_height="@dimen/y130"
+                android:src="@mipmap/btn_handsfree_nor" />
+            <TextView
+                android:id="@+id/tv_hangsFreeRequest"
+                style="@style/tv2et_wrap_content_12sp"
+                android:text="@string/string_handsFree"
+                android:textColor="@color/colorTextView_03"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y32"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_audioSCallShrink"
+        android:layout_width="@dimen/x72"
+        android:layout_height="@dimen/y72"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/x25"
+        android:layout_marginTop="@dimen/x50"
+        android:padding="@dimen/x20"
+        android:src="@mipmap/btn_shrink_down_nor"
+        android:visibility="gone"/>
+</RelativeLayout>

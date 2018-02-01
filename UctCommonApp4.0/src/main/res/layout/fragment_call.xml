@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parentView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+<!--如果去掉的话，对讲滑动收缩时显示异常，why?-->
+    <View
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        >
+    </View>
+<!---->
+    <TextView
+        android:id="@+id/offline_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_below="@+id/rl2"
+        android:background="@color/colorBackground12"
+        android:drawableLeft="@mipmap/icon_offline"
+        android:drawablePadding="@dimen/x14"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x30"
+        android:text="sadgsfgdfg"
+        android:textColor="@color/colorTextView_10"
+        android:textSize="@dimen/y24"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/callWindowView"
+        android:layout_below="@+id/offline_tv"
+        android:background="@color/colorWhite_lv_bg"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <com.ptyt.uct.widget.PTYTCallWindowView
+        android:id="@+id/callWindowView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </com.ptyt.uct.widget.PTYTCallWindowView>
+
+</RelativeLayout>

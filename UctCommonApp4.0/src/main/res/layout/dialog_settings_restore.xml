@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/y48"
+                android:layout_marginTop="@dimen/y40">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/y36"
+            android:layout_height="@dimen/y36"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:textColor="@color/colorTextView_18"
+            android:textSize="@dimen/y28"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x80"
+        android:layout_marginRight="@dimen/x80"
+        android:layout_marginTop="@dimen/y44"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/x170"
+            android:layout_height="@dimen/y70"
+            android:background="@drawable/shape_white_background"
+            android:gravity="center"
+            android:textColor="@color/colorTextView_19"
+            android:textSize="@dimen/y30"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="@dimen/x170"
+            android:layout_height="@dimen/y70"
+            android:layout_marginLeft="@dimen/x48"
+            android:background="@drawable/shape_blue_background"
+            android:gravity="center"
+            android:textColor="@color/colorTextView_05"
+            android:textSize="@dimen/y30"/>
+
+    </LinearLayout>
+</RelativeLayout>

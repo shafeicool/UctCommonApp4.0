@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+    android:paddingTop="@dimen/y20">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y20">
+
+        <Button
+            android:id="@+id/txt_or_audio_btn"
+            android:layout_width="@dimen/y70"
+            android:layout_height="@dimen/y70"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@mipmap/icon_voice"/>
+
+        <Button
+            android:id="@+id/send_or_func_btn"
+            android:layout_width="@dimen/y70"
+            android:layout_height="@dimen/y70"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_add"
+            android:textColor="@color/colorTextView_05"
+            android:textSize="@dimen/y32"/>
+
+        <Button
+            android:id="@+id/keyboard_or_face_btn"
+            android:layout_width="@dimen/y70"
+            android:layout_height="@dimen/y70"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@id/send_or_func_btn"
+            android:background="@mipmap/icon_expression"/>
+
+
+        <EditText
+            android:id="@+id/text_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/keyboard_or_face_btn"
+            android:layout_toRightOf="@id/txt_or_audio_btn"
+            android:background="@drawable/shape_message_bottom_fuc"
+            android:fadeScrollbars="false"
+            android:gravity="center_vertical"
+            android:maxLines="4"
+            android:minHeight="@dimen/y80"
+            android:minLines="1"
+            android:padding="@dimen/y10"
+            android:textSize="@dimen/y32"/>
+
+
+        <com.ptyt.uct.widget.AudioRecordButton
+            android:id="@+id/audio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y70"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/keyboard_or_face_btn"
+            android:layout_toRightOf="@id/txt_or_audio_btn"
+            android:background="@drawable/shape_message_bottom_fuc"
+            android:text="@string/string_message_audio_button_normal"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_line_gray_1dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"/>
+
+
+    <com.ptyt.uct.widget.MessageChatBottomFuncView
+        android:id="@+id/bottom_func_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y0"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/y20"
+        android:visibility="gone"
+        app:layout_heightPercent="30%"/>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

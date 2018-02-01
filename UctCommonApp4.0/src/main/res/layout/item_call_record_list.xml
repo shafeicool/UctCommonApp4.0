@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_press_background"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30">
+
+    <ImageView
+        android:id="@+id/type_iv"
+        android:layout_width="@dimen/y28"
+        android:layout_height="@dimen/y28"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/checked_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/record_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/checked_iv"
+        android:text=""
+        android:textColor="@color/colorTextView_03"
+        android:textSize="@dimen/y24"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y24"
+        android:layout_toLeftOf="@id/record_time_tv"
+        android:layout_toRightOf="@+id/type_iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/colorTextView_01"
+        android:textSize="@dimen/y30"/>
+
+    <TextView
+        android:id="@+id/call_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_toRightOf="@+id/type_iv"
+        android:text=""
+        android:textColor="@color/colorTextView_20"
+        android:textSize="@dimen/y22"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_below="@id/call_time_tv"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y24"
+        android:layout_toRightOf="@+id/type_iv"
+        android:background="@color/colorline02"/>
+</RelativeLayout>

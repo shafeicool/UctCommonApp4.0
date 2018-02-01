@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView_SCall"
+    android:layout_width="@dimen/x240"
+    android:layout_height="@dimen/y175"
+    android:layout_marginTop="@dimen/y40"
+    android:layout_alignParentRight="true">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y130"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_round_corner_stroke_drak"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_SCallUserName"
+                style="@style/view_wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/x30" />
+
+            <TextView
+                android:id="@+id/tv_SCallTimeShrink"
+                style="@style/view_wrap_content"
+                android:layout_below="@+id/tv_SCallUserName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y6"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/x26" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/view_meeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+        <ImageView
+            android:id="@+id/iv_meeting"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:src="@mipmap/ic_meeting_call"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginLeft="@dimen/x30"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x40"
+            android:gravity="center_vertical"
+            android:text="会议"
+            android:textSize="@dimen/y32"
+            android:textColor="@color/colorRedAlpha"/>
+    </LinearLayout>
+</RelativeLayout>
+

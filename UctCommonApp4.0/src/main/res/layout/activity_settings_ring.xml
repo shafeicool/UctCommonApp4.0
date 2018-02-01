@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptyt.uct.activity.SettingsRingActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y20">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/colorline04"/>
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@drawable/selector_press_background"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_settings_ring"
+            android:paddingLeft="@dimen/x32"
+            android:paddingRight="@dimen/x32"
+            android:text="@string/string_settings_ringing_ring"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y32"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/colorline04"/>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@drawable/selector_press_background"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_settings_ring"
+            android:paddingLeft="@dimen/x32"
+            android:paddingRight="@dimen/x32"
+            android:text="@string/string_settings_ringing_shake"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y32"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/colorline04"/>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@drawable/selector_press_background"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_settings_ring"
+            android:paddingLeft="@dimen/x32"
+            android:paddingRight="@dimen/x32"
+            android:text="@string/string_settings_ringing_ring_and_shake"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y32"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/colorline04"/>
+    </RadioGroup>
+
+</LinearLayout>

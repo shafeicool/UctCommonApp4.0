@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/dialog_login_ll"
+              android:layout_width="@dimen/x600"
+              android:layout_height="@dimen/y340"
+              android:background="@mipmap/dialog_login_prompt_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/y64">
+
+        <ImageView
+            android:layout_width="@dimen/y36"
+            android:layout_height="@dimen/y36"
+            android:background="@mipmap/icon_dawn"
+            android:paddingRight="@dimen/x12"/>
+
+        <TextView
+            android:id="@+id/dialog_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_prompt_title1"
+            android:textColor="@color/colorTextView_10"
+            android:textSize="@dimen/y30"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/y32"
+        android:paddingTop="@dimen/y20"
+        android:text="@string/dialog_prompt_content1"
+        android:textColor="@color/colorBlack02"
+        android:textSize="@dimen/y28"/>
+
+    <include layout="@layout/view_line01_gray_1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+        <Button
+            android:id="@+id/dialog_relogin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/dialog_prompt_confim1"
+            android:textColor="@color/textColor_press"
+            android:textSize="@dimen/y30"/>
+
+        <include layout="@layout/view_line02_gray_1dp"/>
+
+        <Button
+            android:id="@+id/dialog_known_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/dialog_prompt_cancel1"
+            android:textColor="@color/colorTextView_10"
+            android:textSize="@dimen/y30"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_videoAnswering"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_video_bg"
+    android:orientation="vertical"
+    android:visibility="visible"
+    >
+
+    <FrameLayout
+        android:id="@+id/fl_remote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/fl_locate"
+        android:layout_width="@dimen/y257"
+        android:layout_height="@dimen/x193"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y70" />
+
+    <RelativeLayout
+        android:id="@+id/rl_state"
+        style="@style/view_wrap_content"
+        android:layout_marginLeft="@dimen/y89"
+        android:layout_marginTop="@dimen/x77"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/fl_locate">
+
+        <ImageView
+            android:id="@+id/iv_videoTypeAnswering"
+            android:layout_width="@dimen/y36"
+            android:layout_height="@dimen/y36"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_video_play" />
+
+        <TextView
+            android:id="@+id/tv_answeringUserName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toRightOf="@+id/iv_videoTypeAnswering"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/x46"
+            android:lines="1"
+            android:text="111"
+            android:ellipsize="end"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_videoCallBusy"
+        style="@style/tv2et_wrap_content_16sp"
+        android:textColor="@color/colorRedAlpha"
+        android:layout_below="@+id/rl_state"
+        android:layout_marginLeft="@dimen/y145"
+        android:layout_marginTop="5dp"
+        android:text="@string/string_audio_calling_hanging"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_speakTime"
+        style="@style/view_wrap_content"
+        android:layout_above="@+id/rl_handUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x45"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/y36"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hands_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/rl_handUp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/x28"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_voice_video"
+            android:layout_width="@dimen/x110"
+            android:layout_height="@dimen/x110"
+            android:src="@mipmap/btn_handsfree_nor"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_voice_video"
+            style="@style/tv2et_wrap_content_12sp"
+            android:layout_below="@+id/iv_voice_video"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y24"
+            android:text="@string/string_handsFree"
+            android:textColor="@color/colorTextView_03" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_handUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/x28"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+        <ImageView
+            android:id="@+id/iv_hangup"
+            android:layout_width="@dimen/x110"
+            android:layout_height="@dimen/x110"
+            android:src="@drawable/selector_hang_up_single"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_hangup"
+            style="@style/tv2et_wrap_content_12sp"
+            android:layout_below="@+id/iv_hangup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y24"
+            android:text="@string/string_hang_up"
+            android:textColor="@color/colorTextView_03" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/rl_handUp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/x28"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="@dimen/y110"
+            android:layout_height="@dimen/y110"
+            android:src="@drawable/selector_camera_single"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_camera"
+            style="@style/tv2et_wrap_content_12sp"
+            android:layout_below="@+id/iv_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y24"
+            android:text="@string/camera_switch"
+            android:textColor="@color/colorTextView_03" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_upVideo"
+        android:layout_width="@dimen/y168"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_videoUploadList"
+        android:layout_width="@dimen/y168"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+    </LinearLayout>
+
+    <include layout="@layout/include_video2group_call_in" />
+
+    <include layout="@layout/include_audio_call_in"/>
+</RelativeLayout>

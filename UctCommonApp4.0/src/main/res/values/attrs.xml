@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--微信气泡聊天属性-->
+    <declare-styleable name="BubblePhotoView">
+        <attr name="bubble_angle" format="dimension" />
+        <attr name="bubble_arrowLocation" format="integer" />
+    </declare-styleable>
+
+    <!--微信录像ProgressBar-->
+    <declare-styleable name="CameraProgressBar">
+        <attr name="scale" format="float"/>
+        <attr name="isLongScale" format="boolean"/>
+        <attr name="progressWidth" format="dimension"/>
+        <attr name="innerRadio" format="dimension"/>
+        <attr name="innerColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="outerColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="maxProgress" format="integer"/>
+        <attr name="progress" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="WaveView">
+        <attr name="waveColor" format="color|reference" />
+        <attr name="waveCount" format="integer" />
+        <attr name="waveCenterIcon" format="reference" />
+    </declare-styleable>
+    <!-- 自定义LimitHeightRecyView的自定义属性 -->
+    <declare-styleable name="MaxHeight">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+    <!-- 自定义LimitHeightRecyView的自定义属性 -->
+    <declare-styleable name="MaxWidth">
+        <attr name="maxWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LineProgressView">
+        <attr name="bgLineColor" format="color|reference" />
+        <attr name="ShowLineColor" format="color|reference" />
+        <attr name="lineTotalWidth" format="dimension"/>
+        <attr name="lineTotalHeight" format="dimension"/>
+    </declare-styleable>
+
+</resources>

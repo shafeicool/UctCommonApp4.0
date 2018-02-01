@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptyt.uct.activity.MessageFileListActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_message_pbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/selector_edittext_bg"
+        android:drawableLeft="@drawable/icon_search"
+        android:drawablePadding="@dimen/y10"
+        android:gravity="center_vertical"
+        android:hint="搜索"
+        android:paddingLeft="@dimen/x16"
+        android:textColorHint="@color/colorTextView_03"
+        android:textSize="@dimen/y28"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/file_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_et">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/no_file_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/error_no_file"
+        android:textColor="@color/colorTextView_02"
+        android:textSize="@dimen/y50"
+        android:visibility="gone"/>
+
+</RelativeLayout>

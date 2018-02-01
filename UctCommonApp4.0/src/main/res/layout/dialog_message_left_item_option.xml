@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_bg"
+              android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/audio_call_ibtn"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/y72"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginBottom="@dimen/y8"
+        android:src="@drawable/selector_message_audio_call"
+        android:background="@null"
+        android:scaleType="center"/>
+    <ImageButton
+        android:id="@+id/message_ibtn"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/y72"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginBottom="@dimen/y8"
+        android:layout_marginLeft="@dimen/x32"
+        android:src="@drawable/selector_message_message"
+        android:background="@null"
+        android:scaleType="center"/>
+    <ImageButton
+        android:id="@+id/video_call_ibtn"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/y72"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginBottom="@dimen/y8"
+        android:layout_marginLeft="@dimen/x32"
+        android:src="@drawable/selector_message_video_call"
+        android:background="@null"
+        android:scaleType="center"/>
+    <ImageButton
+        android:id="@+id/video_up_ibtn"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/y72"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_marginBottom="@dimen/y8"
+        android:layout_marginLeft="@dimen/x32"
+        android:src="@drawable/selector_message_video_up"
+        android:background="@null"
+        android:scaleType="center"/>
+
+</LinearLayout>

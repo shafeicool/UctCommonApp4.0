@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ptyt.uct.activity.SettingsAboutActivity">
+
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="@dimen/y144"
+        android:layout_height="@dimen/y144"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y96"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/y96"
+        android:layout_marginTop="@dimen/y20"
+        android:textColor="@color/colorTextView_16"
+        android:textSize="@dimen/y32"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/colorline04"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/selector_press_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x32"
+            android:text="@string/string_settings_about_feedback"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y32"/>
+
+        <ImageButton
+            android:layout_width="@dimen/y64"
+            android:layout_height="@dimen/y64"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x8"
+            android:background="@color/transparent"
+            android:src="@mipmap/icon_more"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_check_new_version"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/selector_press_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x32"
+            android:text="@string/string_settings_about_check"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y32"/>
+
+        <ImageButton
+            android:layout_width="@dimen/y64"
+            android:layout_height="@dimen/y64"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x8"
+            android:background="@color/transparent"
+            android:src="@mipmap/icon_more"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_uctlib_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@drawable/selector_press_background">
+
+        <TextView
+            android:id="@+id/tv_uctlib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x32"
+            android:text="@string/string_settings_about_uctlib_number"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y32"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+</LinearLayout>

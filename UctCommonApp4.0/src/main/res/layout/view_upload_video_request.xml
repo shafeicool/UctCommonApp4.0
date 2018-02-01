@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x454">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/y100"
+        android:layout_height="@dimen/y100"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/icon_message_person"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_userName_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y60"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/y48"
+        app:layout_constraintLeft_toRightOf="@+id/iv_avatar"
+        app:layout_constraintTop_toTopOf="@+id/iv_avatar" />
+
+    <TextView
+        android:id="@+id/tv_status_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y40"
+        android:layout_marginLeft="0dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/y30"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_userName_dialog"
+        app:layout_constraintTop_toBottomOf="@+id/tv_userName_dialog" />
+
+    <ImageView
+        android:id="@+id/iv_hangup"
+        android:layout_width="@dimen/y120"
+        android:layout_height="@dimen/y120"
+        android:src="@drawable/selector_hang_up_single"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_hangup"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_hangup"
+        style="@style/view_wrap_content"
+        android:layout_below="@+id/iv_hangup"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/string_hang_up"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/x26"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_hangup"
+        app:layout_constraintRight_toRightOf="@+id/iv_hangup"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/iv_uploadVideoReceive"
+        android:layout_width="@dimen/y120"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/selector_answer_single"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_hangup"
+        android:layout_marginBottom="-7dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/view_wrap_content"
+        android:text="@string/string_accept"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/x26"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_hangup"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_uploadVideoReceive"
+        app:layout_constraintRight_toRightOf="@+id/iv_uploadVideoReceive" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 组聊天界面选择文件界面begin -->
+    <string-array name="gmessage_select_file_icons">
+        <item>@mipmap/icon_photo</item>
+        <item>@mipmap/icon_shoot</item>
+        <item>@mipmap/icon_file</item>
+        <item>@mipmap/icon_my_location</item>
+        <item>@mipmap/icon_map</item>
+        <item>@mipmap/icon_intercom</item>
+    </string-array>
+    <string-array name="gmessage_select_file_text">
+        <item>照片</item>
+        <item>拍摄</item>
+        <item>文件</item>
+        <item>位置</item>
+        <item>地图</item>
+        <item>对讲</item>
+    </string-array>
+    <string-array name="gmessage_select_file_action">
+        <item>android.intent.action.MESSAGE_PHOTO_LIST</item>
+        <item>android.intent.action.MESSAGE_SHOOT</item>
+        <item>android.intent.action.MESSAGE_FILE_LIST</item>
+        <item>android.intent.action.MESSAGE_MY_LOCATION</item>
+        <item>android.intent.action.MESSAGE_MAP</item>
+        <item>android.intent.action.MESSAGE_GROUP_CALL</item>
+    </string-array>
+    <!-- 组聊天界面选择文件界面end -->
+
+    <!-- 单人聊天界面选择文件界面begin -->
+    <string-array name="smessage_select_file_icons">
+        <item>@mipmap/icon_photo</item>
+        <item>@mipmap/icon_shoot</item>
+        <item>@mipmap/icon_file</item>
+        <item>@mipmap/icon_my_location</item>
+        <item>@mipmap/icon_map</item>
+    </string-array>
+    <string-array name="smessage_select_file_text">
+        <item>照片</item>
+        <item>拍摄</item>
+        <item>文件</item>
+        <item>位置</item>
+        <item>地图</item>
+    </string-array>
+    <string-array name="smessage_select_file_action">
+        <item>android.intent.action.MESSAGE_PHOTO_LIST</item>
+        <item>android.intent.action.MESSAGE_SHOOT</item>
+        <item>android.intent.action.MESSAGE_FILE_LIST</item>
+        <item>android.intent.action.MESSAGE_MY_LOCATION</item>
+        <item>android.intent.action.MESSAGE_MAP</item>
+    </string-array>
+    <!-- 单人聊天界面选择文件界面end -->
+
+</resources>

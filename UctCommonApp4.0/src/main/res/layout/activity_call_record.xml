@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptyt.uct.activity.CallRecordActivity">
+
+    <TextView
+        android:id="@+id/no_record_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/string_call_record_no_record"
+        android:textColor="@color/colorTextView_07"
+        android:textSize="@dimen/y50"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

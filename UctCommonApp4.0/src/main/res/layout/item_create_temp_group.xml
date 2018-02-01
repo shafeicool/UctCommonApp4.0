@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_press_background"
+                android:paddingBottom="@dimen/y20"
+                android:paddingTop="@dimen/y20">
+
+    <ImageView
+        android:id="@+id/iv_checkState"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x70"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/x18"
+        android:src="@mipmap/chenkbox_normal"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/y70"
+        android:layout_height="@dimen/y70"
+        android:src="@mipmap/ic_group_people"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        style="@style/view_wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_toLeftOf="@id/iv_checkState"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/colorTextView_01"
+        android:textSize="@dimen/y28"/>
+
+    <TextView
+        android:id="@+id/tv_userTel"
+        style="@style/view_wrap_content"
+        android:layout_below="@+id/tv_username"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/y8"
+        android:layout_toLeftOf="@id/iv_checkState"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/colorTextView_02"
+        android:textSize="@dimen/y24"/>
+
+</RelativeLayout>

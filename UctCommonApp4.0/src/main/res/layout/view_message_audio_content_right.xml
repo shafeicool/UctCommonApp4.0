@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_audio_read"
+            android:layout_width="@dimen/y12"
+            android:layout_height="@dimen/y12"
+            android:background="@drawable/shape_conversation_item_unread"
+            android:paddingBottom="@dimen/y12"/>
+
+        <TextView
+            android:id="@+id/tv_audio_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextView_06"
+            android:textSize="@dimen/y26"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_toRightOf="@id/ll_audio"
+        android:background="@drawable/shape_message_audio_background_right"
+        android:padding="@dimen/x25">
+
+        <ImageView
+            android:id="@+id/ib_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/animation_list_message_audio_right"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

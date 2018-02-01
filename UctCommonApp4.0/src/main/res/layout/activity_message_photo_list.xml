@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptyt.uct.activity.MessageFileListActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_message_pbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/thumbnail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:drawableLeft="@mipmap/radiobutton_nor"
+        android:text="@string/string_photo_list_original"
+        android:background="@color/colorBackground13"
+        android:textColor="@color/colorTextView_01"
+        android:textSize="@dimen/y38"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/x280"
+        android:paddingRight="@dimen/x280"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/file_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_layout"
+        android:layout_above="@id/thumbnail_tv"
+        android:padding="@dimen/y4">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/no_file_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/error_no_file"
+        android:textColor="@color/colorTextView_02"
+        android:textSize="@dimen/y50"
+        android:visibility="gone"/>
+
+</RelativeLayout>

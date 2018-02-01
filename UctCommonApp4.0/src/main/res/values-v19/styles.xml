@@ -1,0 +1,11 @@
+<resources>
+    <!--注意这里是为了适配状态栏全透明时只支持4.4的actionBar高度问题-->
+    <style name="actionBarPaddingTop">
+        <item name="android:paddingTop">@dimen/y50</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="android:windowTranslucentStatus">@color/colorBlue</item>
+    </style>
+</resources>

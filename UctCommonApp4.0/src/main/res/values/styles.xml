@@ -1,0 +1,149 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorBlue</item>
+    </style>
+    <style name="CameraTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/colorBlackTheme01</item>
+    </style>
+
+    <!-- 相册popupwindow弹出效果 -->
+    <style name="take_album_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/y32</item>
+    </style>
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+
+    <!--<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>-->
+
+    <!--重新登录Dialog样式-->
+    <style name="Theme_reloginDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <!--包裹内容-->
+    <style name="view_wrap_content">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width" >wrap_content</item>
+    </style>
+
+    <!--包裹内容-->
+    <style name="one_line_control">
+       <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--< ################################ 微信按住说话Dialog样式 ############################"/>-->
+    <style name="Theme_audioDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <!--< ################################ TextView 和 EditView 的样式抽取 ############################"/>-->
+    <!--包裹内容14sp-->
+    <style name="tv2et_wrap_content_12sp" parent="view_wrap_content">
+        <item name="android:textSize">@dimen/y24</item>
+    </style>
+    <style name="tv2et_wrap_content_14sp" parent="view_wrap_content">
+        <item name="android:textSize">@dimen/y28</item>
+    </style>
+    <!--包裹内容16sp-->
+    <style name="tv2et_wrap_content_16sp" parent="view_wrap_content">
+        <item name="android:textSize">@dimen/y32</item>
+    </style>
+    <!--包裹内容18sp-->
+    <style name="tv2et_wrap_content_18sp" parent="view_wrap_content">
+        <item name="android:textSize">@dimen/y36</item>
+    </style>
+    <!--包裹内容16sp颜色01-->
+    <style name="tv2et_wrap_content_16sp_color01" parent="tv2et_wrap_content_16sp">
+        <item name="android:textColor">@color/colorTextView_01</item>
+    </style>
+    <!--包颜色018sp颜色01-->
+    <style name="tv2et_wrap_content_18sp_color01" parent="tv2et_wrap_content_18sp">
+        <item name="android:textColor">@color/colorTextView_01</item>
+    </style>
+    <!--包裹内容16sp颜色02-->
+    <style name="tv2et_wrap_content_16sp_color02" parent="tv2et_wrap_content_16sp">
+        <item name="android:textColor">@color/colorTextView_02</item>
+    </style>
+    <!--包裹颜色018sp颜色02-->
+    <style name="tv2et_wrap_content_18sp_color02" parent="tv2et_wrap_content_18sp">
+        <item name="android:textColor">@color/colorTextView_02</item>
+    </style>
+    <!--width填充，16sp-->
+    <style name="tv2et_width_matchParent_16sp">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--width填充，16sp-->
+    <style name="tv2et_width_matchParent_16sp_color01" parent="tv2et_width_matchParent_16sp">
+        <item name="android:color">@color/colorTextView_01</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--注意这里是为了适配状态栏全透明时只支持4.4的actionBar高度问题-->
+    <style name="actionBarPaddingTop">
+        <item name="android:paddingTop">0px</item>
+    </style>
+    <!-- 自定义对话框样式 透明 -->
+    <style name="dialog_transparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+    </style>
+    <!-- 自定义对话框样式 不透明 -->
+    <style name="dialog_non_transparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="android:background">@color/colorBackground10</item><!-- 背景色 -->
+    </style>
+
+    <!--  这个是加入的代码 -->
+    <style name="my_popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/map_pop_enter</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/map_pop_exit</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ItemBg">
+        <item name="android:background">@drawable/selector_item</item>
+    </style>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/x30"
+    android:background="@drawable/shape_map_dialog_bg"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy_mapDialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y580"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x50">
+    </android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:id="@+id/iv_dialogCancel"
+        android:layout_width="@dimen/x64"
+        android:layout_height="@dimen/x64"
+        android:src="@mipmap/ic_x"
+        android:padding="@dimen/x8"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

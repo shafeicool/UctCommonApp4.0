@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/y354"
+    android:layout_height="@dimen/y354"
+    android:background="@drawable/shape_message_audio_dialog_black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/y20"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/y40"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/dialog_icon"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y120"
+            android:src="@mipmap/icon_vioce"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/dialog_voice"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y120"
+            android:src="@mipmap/level_1"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recorder_dialogtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:text="@string/string_message_audio_button_want_to_cancel2"
+        android:textSize="@dimen/y28"/>
+
+</LinearLayout>

@@ -1,0 +1,391 @@
+<resources>
+    <string name="app_name">普天通用4.0</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_login">普天通用4.0</string>
+
+    <!-- 登录页面 -->
+    <string name="string_sign_in">登&#160;录</string>
+    <string name="prompt_username">账号</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_ip">I&#160;P&#160;&#160;&#160;&#160;</string>
+    <string name="error_null_username">用户名为空</string>
+    <string name="error_null_password">密码为空</string>
+    <string name="error_null_ip">IP地址为空</string>
+    <string name="error_invalid_ip">IP地址无效</string>
+    <string name="dialog_prompt_title1">登录提醒</string>
+    <string name="dialog_prompt_title2">应用升级</string>
+    <string name="dialog_prompt_content1">您的账号在另一台设备上登录</string>
+    <string name="dialog_prompt_content2">当前网络不可用，请检查您的网络设置</string>
+    <string name="dialog_prompt_content3">用户已离线</string>
+    <string name="dialog_prompt_content4">检测到新版本，是否现在升级？</string>
+    <string name="dialog_prompt_confim1">重新登录</string>
+    <string name="dialog_prompt_confim2">是</string>
+    <string name="dialog_prompt_cancel1">知道了</string>
+    <string name="dialog_prompt_cancel2">否</string>
+    <string name="string_login_error1">用户不存在</string>
+    <string name="string_login_error2">密码错误</string>
+    <string name="string_login_error3">网络故障</string>
+    <string name="string_login_error4">终端类型错误</string>
+    <string name="string_login_error5">无漫游权限</string>
+    <string name="string_login_error6">未指配电话号码或者鉴权结果不一致</string>
+    <string name="string_login_error7">用户被盗窃</string>
+    <string name="string_login_error8">账号被其他用户占用</string>
+    <string name="string_login_error9">用户数据插入失败</string>
+    <string name="string_login_error10">设备认证失败</string>
+    <string name="string_login_error11">网络错误</string>
+    <string name="string_login_error12">未知用户</string>
+    <string name="string_login_error13">未知登录原因</string>
+    <string name="string_login_request_fail">登录请求失败，result = </string>
+
+    <!-- 会话列表 -->
+    <string name="string_conversation_stick">置顶</string>
+    <string name="string_conversation_unstick">取消置顶</string>
+    <string name="string_conversation_delete">删除</string>
+    <string name="prompt_no_list">无最近会话</string>
+    <string name="string_last_message_audio">[语音]</string>
+    <string name="string_last_message_image">[图片]</string>
+    <string name="string_last_message_video">[视频]</string>
+    <string name="string_last_message_file">[文件]</string>
+    <string name="string_last_message_my_location">[位置]</string>
+    <string name="string_last_message_audio_call">[语音聊天]</string>
+    <string name="string_last_message_unknown">[未知消息类型]</string>
+
+    <!-- 地图 -->
+    <string name="string_map_prompt1">无在线用户</string>
+    <string name="string_map_prompt2">当前定位位置获取失败</string>
+
+    <!-- 主界面 -->
+    <string name="string_main_group_call_hangup"> 组呼挂断</string>
+    <string name="string_main_delete_group_fail">删除组失败 result=</string>
+    <string name="string_main_group_list_prompt">不能选择登录号码</string>
+    <string name="string_main_group_member_list_online">在线人数:%1$d    总人数:%2$d</string>
+
+    <!-- 信息聊天 -->
+    <string name="string_the_day_before_yesterday">前天</string>
+    <string name="string_yesterday">昨天</string>
+    <string name="string_year_lib">年</string>
+    <string name="string_mouth">月</string>
+    <string name="string_day">日</string>
+    <string name="string_am">上午</string>
+    <string name="string_pm">下午</string>
+    <string name="string_message_action_send">发送</string>
+    <string name="content_description_empty">描述</string>
+    <string name="string_message_audio_button_normal">按住 说话</string>
+    <string name="string_message_audio_button_recording">松开 结束</string>
+    <string name="string_message_audio_button_want_to_cancel1">松开手指，取消发送</string>
+    <string name="string_message_audio_button_want_to_cancel2">手指上滑，取消发送</string>
+    <string name="string_message_audio_button_tooshort">录音时间过短</string>
+    <string name="string_message_audio_button_exception">语音录制异常</string>
+    <string name="sdcard_no_exist">SD卡不存在或不可用</string>
+    <string name="record_recording_equipment_is_not_available">录音失败</string>
+    <string name="msg_msg_send_error_1">未登录,请登录后发送!</string>
+    <string name="msg_msg_send_error_2">可用空间不足500M，无法发送或下载!</string>
+    <string name="msg_msg_send_error_3">用户已离线，无法发送</string>
+    <string name="msg_msg_send_error_4">视频路径为空</string>
+    <string name="msg_msg_send_error_5">视频文件不存在</string>
+    <string name="msg_msg_send_error_6">图片路径为空</string>
+    <string name="msg_msg_send_error_7">图片文件不存在</string>
+    <string name="msg_msg_send_error_8">不能发送空白信息</string>
+    <string name="error_no_file">未搜索到任何相关文件</string>
+    <string name="error_no_progress">获取发送进度值失败</string>
+    <string name="string_photo_progress">%1$d%%</string>
+    <string name="string_message_copy">复制</string>
+    <string name="string_message_forward_person">转发个人</string>
+    <string name="string_message_forward_group">转发组</string>
+    <string name="string_message_delete">删除</string>
+    <string name="string_message_unknown_size">未知文件大小</string>
+    <string name="string_message_unknown_place">未知地点</string>
+    <string name="string_message_unknown_location">未知位置</string>
+    <string name="string_message_unknown_coordinates">未获取坐标</string>
+    <string name="string_message_unknown_data">未获取数据</string>
+    <string name="string_message_file_error1">文件输入流异常</string>
+    <string name="string_message_file_error2">文件不存在</string>
+
+    <!-- 信息我的位置 -->
+    <string name="string_my_location_title">位置</string>
+    <string name="string_my_location_send">发送</string>
+    <string name="string_my_location_place_name">[位置]</string>
+    <string name="string_my_location_unknown_location">未获取坐标</string>
+    <string name="string_my_location_unknown_path">截屏路径不存在</string>
+
+    <!-- 信息文件列表 -->
+    <string name="string_file_list_title">手机文件</string>
+    <string name="string_file_list_send">发送</string>
+    <string name="string_file_list_prompt">发送的文件不能超过%1$d个</string>
+
+    <!-- 信息照片浏览 -->
+    <string name="string_photo_browser_title">照片浏览</string>
+    <string name="string_photo_browser_send">发送</string>
+    <string name="string_photo_browser_downloading">正在下载文件</string>
+    <string name="string_photo_browser_download_fail">下载文件失败</string>
+    <string name="string_photo_browser_file_path_inexistence1">文件路径不存在</string>
+    <string name="string_photo_browser_file_path_inexistence2">文件路径不存在，无法播放</string>
+
+    <!-- 信息照片列表 -->
+    <string name="string_photo_list_title">相册</string>
+    <string name="string_photo_list_send">发送</string>
+    <string name="string_photo_list_original">原图</string>
+    <string name="string_photo_list_prompt1">不能分享短于1秒的视频</string>
+    <string name="string_photo_list_prompt2">发送的图片或视频不能超过%1$d张</string>
+    <string name="string_album_title1">图片与视频</string>
+    <string name="string_album_title2">视频</string>
+    <string name="string_album_title3">图片</string>
+    <string name="string_album_count">%1$d张</string>
+
+    <!-- 信息拍照 -->
+    <string name="string_camera_shoot">轻触拍照，按住摄像</string>
+    <string name="string_camera_error1">相机异常，请返回！</string>
+    <string name="string_camera_error2">可能有其他录音设备正在占用麦克风，请关闭后再录像！</string>
+
+    <!-- 信息文件下载 -->
+    <string name="string_file_download_title">文件下载</string>
+    <string name="string_file_download_start">开始下载</string>
+    <string name="string_file_download_restart">重新下载</string>
+    <string name="string_file_download_success">下载完成</string>
+    <string name="string_file_download_fail">下载失败</string>
+    <string name="string_file_download_continue">继续下载</string>
+    <string name="string_file_download_loading">正在下载...(%1$d%%)</string>
+    <string name="string_file_download_error1">无法打开文件</string>
+    <string name="string_file_download_error2">文件路径不存在</string>
+
+    <!-- 通话记录 -->
+    <string name="string_call_record_title">通话记录</string>
+    <string name="string_call_record_editor">编辑</string>
+    <string name="string_call_record_cancel">取消</string>
+    <string name="string_call_record_select_all">全选</string>
+    <string name="string_call_record_unselect_all">取消全选</string>
+    <string name="string_call_record_delete">删除</string>
+    <string name="string_call_record_no_record">无最近记录</string>
+    <string name="prompt_call_record_select">请选择至少一条记录</string>
+
+    <!-- 通讯录/创建组/转发消息 -->
+    <string name="string_create_group_title1">创建组</string>
+    <string name="string_create_group_title2">消息转发</string>
+    <string name="string_create_group_confim1">创建</string>
+    <string name="string_create_group_confim2">确定</string>
+    <string name="string_create_group_dialog_title">创建组</string>
+    <string name="string_create_group_dialog_message">是否创建临时组？</string>
+    <string name="string_create_group_dialog_confim">确定</string>
+    <string name="string_create_group_dialog_cancel">取消</string>
+    <string name="string_create_group_request_fail">创建组请求失败</string>
+    <string name="string_create_group_response_fail1">创建组响应失败</string>
+    <string name="string_create_group_response_fail2">创建组失败，登录用户最多属于30个组</string>
+    <string name="string_create_group_prompt1">已发送</string>
+    <string name="string_create_group_prompt2">请输入临时组名</string>
+    <string name="string_create_group_prompt3">创建临时组最多选择用户数量为%1$d</string>
+    <string name="string_create_group_prompt4">请至少选择一个用户</string>
+    <string name="string_create_group_prompt5">组名不允许输入特殊符号</string>
+    <string name="string_contact_title">通讯录</string>
+    <string name="string_contact_subtitle">创建对讲</string>
+    <string name="string_contact_download_success">通讯录下载成功</string>
+    <string name="string_contact_download_fail">通讯录下载失败</string>
+
+    <!-- 删除临时组 -->
+    <string name="string_delete_group_dialog_title">删除组</string>
+    <string name="string_delete_group_dialog_message">是否删除临时组？</string>
+    <string name="string_delete_group_dialog_confim">确定</string>
+    <string name="string_delete_group_dialog_cancel">取消</string>
+    <string name="string_delete_group_fail">删除组请求失败</string>
+
+    <!-- 设置 -->
+    <string name="string_settings_title">设置</string>
+    <string name="string_settings_account">账号与安全</string>
+    <string name="string_settings_account_editor">编辑</string>
+    <string name="string_settings_account_modify_password">修改密码</string>
+    <string name="string_settings_account_exit">退出登录</string>
+    <string name="string_settings_account_dialog_title">确定要退出登录？</string>
+    <string name="string_settings_account_dialog_confirm">确定</string>
+    <string name="string_settings_account_dialog_cancel">取消</string>
+    <string name="string_settings_account_password_old">旧密码</string>
+    <string name="string_settings_account_password_new">新密码</string>
+    <string name="string_settings_account_password_hint1">请输入旧密码</string>
+    <string name="string_settings_account_password_hint2">密码可以为字母、数字或符号</string>
+    <string name="string_settings_account_password_confirm">确定</string>
+    <string name="string_settings_account_password_null">密码为空</string>
+    <string name="string_settings_account_password_error">输入的旧密码错误</string>
+    <string name="string_settings_account_password_same">修改密码相同</string>
+    <string name="string_settings_account_password_success">修改密码成功</string>
+    <string name="string_settings_account_password_fail">修改密码失败</string>
+    <string name="string_settings_ringing">振铃</string>
+    <string name="string_settings_ringing_ring">铃声</string>
+    <string name="string_settings_ringing_shake">振动</string>
+    <string name="string_settings_ringing_ring_and_shake">铃声 + 振动</string>
+    <string name="string_settings_bit_rate">码率</string>
+    <string name="string_settings_back_door">后门</string>
+    <string name="string_settings_back_door_log">日志打印开关</string>
+    <string name="string_settings_frame_rate">帧率</string>
+    <string name="string_settings_frame_rate_unit">帧/秒</string>
+    <string name="string_settings_resolution">分辨率</string>
+    <string name="string_settings_resolution_320">流畅</string>
+    <string name="string_settings_resolution_640">标清</string>
+    <string name="string_settings_resolution_1280">高清</string>
+    <string name="string_settings_resolution_1920">超高清</string>
+    <string name="string_settings_bit_rate_current">当前选择为：</string>
+    <string name="string_settings_clear_all_messages">清空聊天记录</string>
+    <string name="string_settings_clear_all_messages_title">将删除所有个人和群的聊天记录</string>
+    <string name="string_settings_clear_all_messages_confirm">删除</string>
+    <string name="string_settings_clear_all_messages_cancel">取消</string>
+    <string name="string_settings_power_saving">省电模式</string>
+    <string name="string_settings_power_saving_open">开</string>
+    <string name="string_settings_power_saving_close">关</string>
+    <string name="string_settings_power_saving_message">关</string>
+    <string name="string_settings_power_saving_title1">开启省电模式会影响GPRS等功能的使用</string>
+    <string name="string_settings_power_saving_title2">关闭省电模式会使应用正常运行，增加耗电量</string>
+    <string name="string_settings_power_saving_confirm1">开启</string>
+    <string name="string_settings_power_saving_confirm2">关闭</string>
+    <string name="string_settings_power_saving_cancel">取消</string>
+    <string name="string_settings_restore">还原</string>
+    <string name="string_settings_restore_settings">设置还原</string>
+    <string name="string_settings_restore_soft">软件还原</string>
+    <string name="string_settings_restore_dialog_title1">设置还原后会丢失所有个人设置</string>
+    <string name="string_settings_restore_dialog_title2">软件还原后会丢失所有个人设置</string>
+    <string name="string_settings_restore_dialog_confirm">还原</string>
+    <string name="string_settings_restore_dialog_cancel">取消</string>
+    <string name="string_settings_about">关于</string>
+    <string name="string_settings_about_version1">集群调度&#160;V%1$d.%2$d</string>
+    <string name="string_settings_about_feedback">反馈</string>
+    <string name="string_settings_about_feedback_hint">写下想对我们说的...</string>
+    <string name="string_settings_about_feedback_submit">提交</string>
+    <string name="string_settings_about_feedback_info">请输入反馈信息</string>
+    <string name="string_settings_about_check">检查新版本</string>
+    <string name="string_settings_about_check_title">软件更新</string>
+    <string name="string_settings_about_checking">新版本检测中...</string>
+    <string name="string_settings_about_version2">V%1$d.%2$d</string>
+    <string name="string_settings_about_prompt1">已经是最新版本了</string>
+    <string name="string_settings_about_prompt2">检测到新版本</string>
+    <string name="string_settings_about_prompt3">SD卡已挂起</string>
+    <string name="string_settings_about_prompt4">SD卡空间不足100M</string>
+    <string name="string_settings_about_prompt5">检测新版本失败</string>
+    <string name="string_settings_about_prompt6">App下载失败</string>
+    <string name="string_settings_about_prompt7">检测新版本请求失败</string>
+    <string name="string_settings_about_prompt8">下载完成，安装APK</string>
+    <string name="string_settings_about_prompt9">不支持版本回退</string>
+    <string name="string_settings_about_check_download">下载</string>
+    <string name="string_settings_about_uctlib_number">库版本号：%1$s</string>
+    <string name="string_settings_about_loading">正在下载...(%1$d%%)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_voice_record">录音</string>
+    <string name="string_build_call">创建对讲</string>
+    <string name="string_address_book">通讯录</string>
+    <string name="string_call_history">通话记录</string>
+    <string name="string_setting">设置</string>
+    <string name="string_create_call">创建对讲</string>
+    <string name="string_cancel">取消</string>
+    <string name="string_answer">接听</string>
+    <string name="string_accept">接受</string>
+    <string name="string_refuse">拒接</string>
+    <string name="string_hand_up_session">挂断当前会话</string>
+    <string name="string_hang_up">挂断</string>
+    <string name="string_call_end">视频通话结束</string>
+    <string name="string_empty_hint">暂无结果，换个词试试吧~</string>
+    <string name="string_loading">正在加载，请稍后..</string>
+    <string name="string_flashlight">手电筒</string>
+    <string name="string_handsFree">免提</string>
+    <string name="string_earphone">听筒</string>
+    <string name="string_silence">静音</string>
+    <string name="string_audio_calling">正在语音呼叫...</string>
+    <string name="string_video_calling">正在视频呼叫...</string>
+    <string name="string_video_call_fail">视频呼叫失败</string>
+    <string name="string_video_upload_fail">视频上传失败</string>
+    <string name="string_audio_call_fail">语音呼叫失败</string>
+    <string name="string_audio_call_answering">语音通话中...</string>
+    <string name="string_video_call_other_requesting">视频呼叫请求中...</string>
+    <string name="string_audio_call_other_requesting">语音呼叫请求中...</string>
+    <string name="string_other_request_your_video">对方请求查看您的视频...</string>
+    <string name="string_video_upload_to_other_requesting">视频上传请求中...</string>
+    <string name="string_video_download_other_requesting">对方视频上传请求中...</string>
+    <string name="string_look_video_other_hangup">纯视频对方挂断</string>
+    <string name="string_look_video_other_answer">纯视频对方接听</string>
+    <string name="string_audio_call_hangup">语音呼叫挂断</string>
+    <string name="string_video_call_hangup">视频呼叫挂断</string>
+    <string name="string_video_call_prompt1">前置摄像头不支持闪光灯</string>
+    <string name="string_video_call_prompt2">当前设备不支持闪光灯</string>
+    <string name="string_video_call_prompt3">当前设备不支持前置摄像头</string>
+    <string name="string_video_upload_hangup">上传视频挂断</string>
+    <string name="string_video_download_hangup">视频接收挂断</string>
+    <string name="string_audio_calling_hanging">语音占线中..</string>
+    <string name="string_audio_video_error1">用户数据错误</string>
+    <string name="string_audio_video_error2">不能与自己通讯</string>
+    <!--组呼-->
+    <string name="string_group_calling_hint">正在组呼中</string>
+    <string name="group_calling">组呼/说话中..</string>
+    <string name="in_speaking">正在讲话...</string>
+    <string name="string_gcall_nobody_speak">组呼/无人说话</string>
+    <string name="record_call_not_answer">未接通</string>
+
+    <string name="permissions_camera_error">相机无法完成初始化，请您正确授权</string>
+    <string name="str_request_camera_message">请求获取相机权限，请您同意</string>
+    <string name="str_request_readcontacts_message">应用程序将请求获取您的联系人信息，否则程序可能无法正常运行</string>
+    <string name="permissions_readcontacts_error">无法读取联系人,请您正确授权。</string>
+    <string name="permissions_record_error">为能正常通话,请您务必授权录音权限。</string>
+    <string name="permissions_record_prompt">无法录音,请您正确授权</string>
+    <string name="permissions_call_error">无法拨打电话,请您正确授权</string>
+    <string name="permissions_call_prompt">应用程序需要授予拨打电话权限</string>
+    <string name="permissions_location_error">无法定位,请您正确授权</string>
+    <string name="permissions_location_prompt">应用程序需要您的位置权限，请您授权</string>
+    <string name="permissions_storage_error">为能正常使用,请打开存储权限</string>
+    <string name="permissions_storage_prompt">为能正常使用,请打开存储权限</string>
+    <string name="permissions_uctlib_error">未初始化app,请打开必要权限</string>
+    <string name="permissions_uctlib_prompt">为使程序正常运行,所用的必要权限请您授权</string>
+    <string name="permissions_video_call">为能正常视频呼叫,请授予相关权限</string>
+    <string name="permissions_video_upload_no_permission">无摄像头权限，无法进行视频上传</string>
+    <string name="permissions_audio_call_no_permission">无录音权限，无法进行语音呼叫</string>
+    <string name="permissions_video_call_no_permission">无录音/摄像头权限，无法进行视频呼叫</string>
+
+    <string name="permissions_denied_storage">读取sd权限拒绝</string>
+    <string name="permissions_denied_camera">相机权限拒绝</string>
+    <string name="permissions_denied_contact">联系人权限拒绝</string>
+    <string name="permissions_denied_record_audio">录音权限拒绝</string>
+    <string name="permissions_denied_call_phone">打电话权限拒绝</string>
+    <string name="permissions_denied_location">定位权限拒绝</string>
+    <string name="permissions_denied_prompt1">为能正常使用,请打开存储权限</string>
+    <string name="permissions_setting">"请在设置中打开应用所必需的权限，否则应用无法进行初始化"</string>
+    <string name="gcall_speaking">正在讲话</string>
+    <string name="gcalling_cannot_audio_call">正在组呼，不能进行语音呼叫</string>
+    <string name="gcalling_cannot_video_call">正在组呼，不能进行视频呼叫</string>
+    <string name="camera_switch">切换摄像头</string>
+    <string name="string_choose_group">选  组</string>
+    <string name="map_search_no_result">未搜到地理详情</string>
+    <string name="map_no_current_position">未获取到当前位置</string>
+    <string name="response_not_exists">该组已不存在</string>
+    <string name="response_no_permission">无权限</string>
+    <string name="response_failed">响应失败</string>
+    <string name="user_self">用户自己</string>
+    <string name="gcalling_can_not_delete_group">当前组组呼中,不能删除!</string>
+    <string name="group_calling_no_lock">组呼中,不能操作锁定组功能</string>
+    <string name="net_error">网络错误</string>
+    <string name="map_guideline">路 线</string>
+    <string name="settings_ppw_permission_title">为使组呼悬浮窗能显示正常,建议在系统设置中打开应用悬浮窗权限</string>
+    <string name="settings_ppw_permission_go">前往</string>
+    <string name="lock_group_no_switch_group">有锁定组时只能切换锁定组</string>
+    <string name="group_calling_no_switch_group">组呼时不能切换组</string>
+    <string name="in_calling_phone">当前正在电话中</string>
+    <string name="headset_cannot_handsfree">耳机接入时不能免提</string>
+    <string name="map_app_not_found">高德、百度或腾讯地图未安装，不能打开</string>
+    <string name="path_zero">M800,544 L224,544 C204.8,544,192,531.2,192,512 L192,512
+C192,492.8,204.8,480,224,480 L800,480 C819.2,480,832,492.8,832,512 L832,512
+C832,531.2,819.2,544,800,544 Z</string>
+    <string name="path_zero1">
+    M 0.24585635359116,  0.552486187845304
+    C 0.24585635359116,  0.331491712707182  0.370165745856354, 0.0994475138121547 0.552486187845304, 0.0994475138121547
+    C 0.734806629834254, 0.0994475138121547 0.861878453038674, 0.331491712707182  0.861878453038674, 0.552486187845304
+    C 0.861878453038674, 0.773480662983425  0.734806629834254, 0.994475138121547  0.552486187845304, 0.994475138121547
+    C 0.370165745856354, 0.994475138121547  0.24585635359116,  0.773480662983425  0.24585635359116,  0.552486187845304
+  </string>
+    <string name="path_one">
+    M927.859,478.061 L168.863,478.061 L477.585,169.193
+C489.27,157.503,489.02,138.312,477.027,126.325
+C465.035,114.339,445.844,114.099,434.159,125.789 L75.1992,484.928
+C73.2048,486.591,71.4252,488.512,69.9046,490.642
+C65.8574,496.015,63.8906,502.482,63.9991,508.97
+C63.8691,516.765,66.7242,524.531,72.5949,530.402 L434.161,892.147
+C445.846,903.838,465.037,903.597,477.029,891.612
+C489.022,879.626,489.272,860.435,477.587,848.744 L168.442,539.454
+L927.859,539.454 C944.386,539.454,957.785,525.715,957.785,508.76
+S944.386,478.061,927.859,478.061 Z
+  </string>
+    <string name="offline_map">离线地图</string>
+</resources>

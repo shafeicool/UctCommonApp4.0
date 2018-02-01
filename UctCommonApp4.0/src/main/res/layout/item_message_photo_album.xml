@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/y20">
+
+    <include layout="@layout/view_line03_gray_1dp"/>
+
+    <ImageView
+        android:id="@+id/iv_show_first"
+        android:layout_width="@dimen/x240"
+        android:layout_height="@dimen/y180"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y20"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_toRightOf="@id/iv_show_first"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片与视频"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y34"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y20"
+            android:text="1000张"
+            android:textColor="@color/colorTextView_02"
+            android:textSize="@dimen/y26"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/y32"
+        android:layout_height="@dimen/y32"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x60"
+        android:src="@mipmap/single_box"/>
+</RelativeLayout>

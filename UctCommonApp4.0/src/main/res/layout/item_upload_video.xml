@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#a0333333"
+    >
+
+    <TextView
+        android:id="@+id/tv_userName"
+        style="@style/view_wrap_content"
+        android:textSize="@dimen/x28"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorWhite"
+        android:layout_centerInParent="true"
+       />
+    <TextView
+        android:id="@+id/tv_speakTime"
+        style="@style/view_wrap_content"
+        android:textSize="@dimen/x28"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/y12"
+        android:drawablePadding="@dimen/x4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_userName"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+        android:id="@+id/iv_videoState_item"
+        android:layout_width="@dimen/x24"
+        android:layout_height="@dimen/x24"
+        android:src="@drawable/animation_list_upload_item"
+        android:layout_toLeftOf="@+id/tv_speakTime"
+        android:layout_below="@+id/tv_userName"
+        android:layout_marginTop="@dimen/y12"
+        />
+
+    <ImageView
+        android:id="@+id/iv_videoWave_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x63"
+        android:src="@drawable/animation_list_wave_item"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_bit_rate"
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/y70"
+        android:gravity="center"
+        android:layout_margin="@dimen/y20"
+        android:textColor="@color/colorTextView_14"
+        android:textSize="@dimen/y32"/>
+</LinearLayout>

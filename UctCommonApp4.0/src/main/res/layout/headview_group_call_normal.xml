@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y90"
+    android:paddingLeft="@dimen/x30"
+    android:background="@color/colorWhite"
+    android:visibility="visible">
+
+    <View
+        android:id="@+id/view_drag"
+        android:layout_width="@dimen/x400"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#fcc"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/y90"
+        android:layout_height="@dimen/y90"
+        android:background="@mipmap/ic_group_portrait" />
+
+    <com.ptyt.uct.widget.MarqueeTextView
+        android:id="@+id/tv_groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y100"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_toLeftOf="@+id/tv_groupCallState"
+        android:layout_marginRight="@dimen/x8"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack01"
+        android:textSize="@dimen/y32"
+        android:lines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/tv_groupCallState"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y100"
+        android:layout_toLeftOf="@+id/iv_unfold"
+        android:gravity="center_vertical"
+        android:textColor="#f46c76"
+        android:textSize="@dimen/y28" />
+    <ImageView
+        android:id="@+id/iv_unfold"
+        android:layout_width="@dimen/x90"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/x30"
+        android:src="@mipmap/ic_pull_down" />
+
+    <ImageView
+        android:id="@+id/iv_lockItem_headView"
+        android:layout_width="@dimen/x24"
+        android:layout_height="@dimen/x24"
+        android:src="@mipmap/ic_group_lock"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+

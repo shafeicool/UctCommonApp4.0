@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ptyt.uct.activity.SettingsModifyPwdActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y12"
+        android:layout_marginTop="@dimen/y36"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:text="@string/string_settings_account_password_old"
+        android:textColor="@color/colorTextView_01"
+        android:textSize="@dimen/y28"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_old"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@null"
+            android:ems="25"
+            android:hint="@string/string_settings_account_password_hint1"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:textColorHint="@color/colorTextView_17"
+            android:textSize="@dimen/y28"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y12"
+        android:layout_marginTop="@dimen/y36"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:text="@string/string_settings_account_password_new"
+        android:textColor="@color/colorTextView_01"
+        android:textSize="@dimen/y28"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_new"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:background="@null"
+            android:ems="25"
+            android:hint="@string/string_settings_account_password_hint2"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:textColorHint="@color/colorTextView_17"
+            android:textSize="@dimen/y28"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline04"/>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="@dimen/x448"
+        android:layout_height="@dimen/y88"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y60"
+        android:background="@drawable/shape_blue_background"
+        android:gravity="center"
+        android:text="@string/string_settings_account_password_confirm"
+        android:textColor="@color/colorTextView_05"
+        android:textSize="@dimen/y36"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.ptyt.uct.fragment.MessageFunctionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="@dimen/y0"
+        android:layout_height="@dimen/y0"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        app:layout_heightPercent="55%w"
+        app:layout_widthPercent="55%w"
+        android:background="@drawable/shape_message_bottom_fuc2">
+        <ImageView
+            android:id="@+id/func_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_map"/>
+    </com.zhy.android.percent.support.PercentFrameLayout>
+
+    <TextView
+        android:id="@+id/func_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        app:layout_heightPercent="30%w"
+        app:layout_widthPercent="100%w"
+        app:layout_textSizePercent="15%w"
+        android:text="sdfsdfsdf"/>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

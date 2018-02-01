@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y238"
+    android:background="@color/colorWhite"
+    android:id="@+id/view_callWindow"
+    android:paddingLeft="@dimen/x30"
+    android:paddingRight="@dimen/x30"
+    >
+    <ImageView
+        android:id="@+id/iv_navigation"
+        android:layout_width="@dimen/x72"
+        android:layout_height="@dimen/x72"
+        android:src="@mipmap/ic_navigation"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/y16"
+        android:layout_marginLeft="@dimen/x30"
+        android:padding="2dp"
+        />
+    <TextView
+        android:id="@+id/tv_userNameSelected"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:textSize="@dimen/y36"
+        android:textColor="@color/colorBlack04"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/iv_navigation" />
+
+    <com.ptyt.uct.widget.MarqueeTextView
+        android:id="@+id/tv_addressSelected"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:layout_marginBottom="@dimen/y5"
+        android:textSize="@dimen/y24"
+        android:textColor="@color/colorBlack02"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_below="@+id/tv_userNameSelected"
+        android:layout_toLeftOf="@+id/iv_navigation"
+        />
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/colorline01"
+        android:layout_below="@+id/tv_addressSelected">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y115"
+        android:layout_marginLeft="@dimen/x70"
+        android:layout_marginRight="@dimen/x70"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@+id/view_line">
+
+        <ImageView
+            android:id="@+id/iv_audio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/y36"
+            android:src="@drawable/selector_voice" />
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/y36"
+            android:src="@drawable/selector_message" />
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/y36"
+            android:src="@drawable/selector_video" />
+
+        <ImageView
+            android:id="@+id/iv_upload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/y36"
+            android:src="@drawable/selector_video_upload" />
+
+    </LinearLayout>
+</RelativeLayout>

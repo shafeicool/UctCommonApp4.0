@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.ptyt.uct.activity.SettingsRootActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y280"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/y12"
+            android:background="@mipmap/bg_set"/>
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/y140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y12"
+            android:background="@mipmap/icon_message_head"/>
+
+        <TextView
+            android:id="@+id/login_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y20"
+            android:textColor="@color/colorTextView_05"
+            android:textSize="@dimen/y28"/>
+    </RelativeLayout>
+
+</LinearLayout>

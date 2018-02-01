@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/frame3"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_create_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+        <ImageView
+            android:layout_width="@dimen/y40"
+            android:layout_height="@dimen/y40"
+            android:src="@drawable/selector_creategroup"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="@string/string_build_call"
+            android:textColor="@drawable/selector_color_nav"
+            android:textSize="@dimen/y28"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_line_gray_1dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_address_book"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+        <ImageView
+            android:layout_width="@dimen/y40"
+            android:layout_height="@dimen/y40"
+            android:src="@drawable/selector_contact"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="@string/string_address_book"
+            android:textColor="@drawable/selector_color_nav"
+            android:textSize="@dimen/y28"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_line_gray_1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_call_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+        <ImageView
+            android:id="@+id/call_record_iv"
+            android:layout_width="@dimen/y40"
+            android:layout_height="@dimen/y40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@drawable/selector_record"/>
+
+        <TextView
+            android:id="@+id/call_record_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/call_record_iv"
+            android:text="@string/string_call_history"
+            android:textColor="@drawable/selector_color_nav"
+            android:textSize="@dimen/y28"/>
+
+        <TextView
+            android:id="@+id/record_unread_count_tv"
+            android:layout_width="@dimen/y28"
+            android:layout_height="@dimen/y28"
+            android:layout_marginRight="@dimen/x4"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_toLeftOf="@id/call_record_tv"
+            android:background="@drawable/shape_conversation_item_unread"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/colorTextView_05"
+            android:textSize="@dimen/y15"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</LinearLayout>

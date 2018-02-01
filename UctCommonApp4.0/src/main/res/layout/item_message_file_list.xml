@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/item_file_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y164"
+                android:padding="@dimen/y32">
+
+    <ImageView
+        android:id="@+id/file_select_iv"
+        android:layout_width="@dimen/y40"
+        android:layout_height="@dimen/y40"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/file_type_iv"
+        android:layout_width="@dimen/y100"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/file_name_tv"
+        android:layout_width="@dimen/x400"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_toLeftOf="@id/file_select_iv"
+        android:layout_toRightOf="@id/file_type_iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack01"
+        android:textSize="@dimen/y28"/>
+
+    <TextView
+        android:id="@+id/file_size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y26"
+        android:layout_below="@id/file_name_tv"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_toRightOf="@id/file_type_iv"
+        android:maxLines="1"
+        android:textColor="@color/colorTextView_02"
+        android:textSize="@dimen/y20"/>
+
+    <TextView
+        android:id="@+id/file_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/file_size_tv"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_toRightOf="@id/file_size_tv"
+        android:maxLines="1"
+        android:textColor="@color/colorTextView_03"
+        android:textSize="@dimen/y20"/>
+</RelativeLayout>

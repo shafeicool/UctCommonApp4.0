@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <TextureView
+        android:id="@+id/mTextureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.ptyt.uct.widget.CameraView
+        android:id="@+id/mCameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y48"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10">
+
+        <TextView
+            android:id="@+id/tv_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/selector_message_shoot_flash"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTextView_05"
+            android:textSize="@dimen/y24"/>
+
+        <ImageView
+            android:id="@+id/iv_facing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_camera"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y80"
+        android:paddingLeft="@dimen/x50"
+        android:paddingRight="@dimen/x50">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_return2"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_return"/>
+
+        <ImageView
+            android:id="@+id/iv_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_sure"
+            android:visibility="invisible"/>
+
+        <com.ptyt.uct.widget.CameraProgressBar
+            android:id="@+id/mProgressbar"
+            android:layout_width="@dimen/x200"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:innerRadio="@dimen/x6"
+            app:isLongScale="true"
+            app:progressWidth="@dimen/x8"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y20"
+        android:text="@string/string_camera_shoot"
+        android:textColor="@color/colorTextView_05"
+        android:textSize="@dimen/y26"/>
+
+
+</RelativeLayout>

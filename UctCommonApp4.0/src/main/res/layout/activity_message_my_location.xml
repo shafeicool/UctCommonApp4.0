@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptyt.uct.activity.MessageMyLocationActivity">
+
+    <com.ptyt.uct.widget.SwipeRefreshView
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y420"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.ptyt.uct.widget.SwipeRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_above="@id/swipeRefreshLayout"
+        android:background="@drawable/selector_press_background"
+        android:paddingLeft="@dimen/y32"
+        android:paddingRight="@dimen/y32"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/myLocationSelectIv"
+            android:layout_width="@dimen/y72"
+            android:layout_height="@dimen/y72"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/icon_selected"/>
+
+        <TextView
+            android:id="@+id/myLocationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x16"
+            android:layout_toLeftOf="@id/myLocationSelectIv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/colorTextView_04"
+            android:textSize="@dimen/y28"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorline02"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativeLayout"
+        android:layout_alignParentTop="true">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.amap.api.maps.MapView>
+
+        <ImageView
+            android:id="@+id/locationIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginRight="@dimen/x10"
+            android:clickable="true"
+            android:src="@drawable/selector_map_location"/>
+
+        <ImageView
+            android:id="@+id/positionIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/y35"
+            android:src="@mipmap/icon_position"/>
+    </RelativeLayout>
+
+</RelativeLayout>

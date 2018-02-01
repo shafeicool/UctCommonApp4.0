@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:id="@+id/account_and_safe"
+        android:icon="@mipmap/icon_safe"
+        android:title="@string/string_settings_account">
+        <intent android:action="com.ptyt.uct.activity.SettingsAccountActivity"/>
+    </header>
+    <header
+        android:id="@+id/ringing"
+        android:icon="@mipmap/icon_bell"
+        android:title="@string/string_settings_ringing">
+        <intent android:action="com.ptyt.uct.activity.SettingsRingActivity"/>
+    </header>
+    <header
+        android:id="@+id/bitrate"
+        android:icon="@mipmap/icon_bit_rate"
+        android:title="@string/string_settings_bit_rate">
+        <intent android:action="com.ptyt.uct.activity.SettingsBitRateActivity"/>
+    </header>
+    <header
+        android:id="@+id/framerate"
+        android:icon="@mipmap/icon_frame_rate"
+        android:title="@string/string_settings_frame_rate">
+        <intent android:action="com.ptyt.uct.activity.SettingsFrameRateActivity"/>
+    </header>
+    <header
+        android:id="@+id/resolution"
+        android:icon="@mipmap/icon_resolution"
+        android:title="@string/string_settings_resolution">
+        <intent android:action="com.ptyt.uct.activity.SettingsResolutionActivity"/>
+    </header>
+    <header
+        android:id="@+id/clear_all_messages"
+        android:icon="@mipmap/icon_clean"
+        android:title="@string/string_settings_clear_all_messages">
+    </header>
+    <header
+        android:id="@+id/power_saving"
+        android:icon="@mipmap/icon_savepower"
+        android:title="@string/string_settings_power_saving">
+    </header>
+    <header
+        android:id="@+id/restore"
+        android:icon="@mipmap/icon_reduction"
+        android:title="@string/string_settings_restore">
+    </header>
+    <header
+        android:id="@+id/about"
+        android:icon="@mipmap/icon_about"
+        android:title="@string/string_settings_about">
+        <intent android:action="com.ptyt.uct.activity.SettingsAboutActivity"/>
+    </header>
+</preference-headers>

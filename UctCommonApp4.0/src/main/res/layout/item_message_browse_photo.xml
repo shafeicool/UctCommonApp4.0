@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground05"
+    tools:context="com.ptyt.uct.activity.MessageBrowsePhotoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/sv_surfaceview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <!--<FrameLayout-->
+        <!--android:id="@+id/fl_layout2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<VideoView-->
+        <!--android:id="@+id/vv_video"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"/>-->
+
+        <!--<uk.co.senab.photoview.PhotoView-->
+        <!--android:id="@+id/iv_photo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:scaleType="centerInside"/>-->
+        <!--</FrameLayout>-->
+        <com.ptyt.uct.widget.PhotoBrowseLayout
+            android:id="@+id/fl_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+        <ImageView
+            android:id="@+id/iv_video_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_video"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_animation"
+                android:layout_width="@dimen/y88"
+                android:layout_height="@dimen/y88"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTextView_05"
+                android:textSize="@dimen/y20"/>
+
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

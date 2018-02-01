@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ll_top_actionbar"
+                style="@style/actionBarPaddingTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:visibility="visible"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/y96"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/y20"
+            android:src="@mipmap/ic_back"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:visibility="gone"
+            android:textSize="@dimen/x32"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/x32"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/view_wrap_content"
+            android:textSize="@dimen/x36"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/y96"
+            android:layout_marginRight="@dimen/y96"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="标题"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="@dimen/y96"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_relative"
+            style="@style/view_wrap_content"
+            android:textSize="@dimen/x32"
+            android:text="右侧菜单"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/x32">
+
+            <TextView
+                android:id="@+id/tv_right1"
+                style="@style/view_wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="右侧菜单"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_right2"
+                android:layout_width="@dimen/y40"
+                android:layout_height="@dimen/y40"
+                android:layout_marginLeft="@dimen/x8"
+                android:layout_toRightOf="@id/tv_right1"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/y28"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_rightButton"
+            style="@style/view_wrap_content"
+            android:textSize="@dimen/x32"
+            android:text="右侧菜单"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:lines="1"
+            android:ellipsize="end"
+            android:paddingRight="@dimen/x30"
+            android:paddingLeft="@dimen/x30"
+            android:paddingTop="@dimen/x6"
+            android:paddingBottom="@dimen/x6"
+            android:layout_marginRight="@dimen/x32"
+            android:background="@drawable/shape_round_corner_white"
+            />
+    </RelativeLayout>
+</RelativeLayout>

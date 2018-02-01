@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptyt.uct.activity.MessageLookOverLocationActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y130"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x32"
+        android:paddingRight="@dimen/x32">
+
+        <ImageView
+            android:id="@+id/navigation_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_navigation"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y38"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/navigation_iv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/string_my_location_place_name"
+            android:textColor="@color/colorTextView_04"
+            android:textSize="@dimen/y32"/>
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y32"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/name_tv"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_toLeftOf="@id/navigation_iv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/string_my_location_place_name"
+            android:textColor="@color/colorTextView_02"
+            android:textSize="@dimen/y28"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativeLayout"
+        android:layout_alignParentTop="true">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.amap.api.maps.MapView>
+
+        <ImageView
+            android:id="@+id/locationIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginRight="@dimen/x10"
+            android:clickable="true"
+            android:src="@drawable/selector_map_location"/>
+    </RelativeLayout>
+
+</RelativeLayout>

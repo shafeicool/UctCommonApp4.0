@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/y220"
+        android:layout_height="@dimen/y220"
+        android:layout_below="@+id/rl_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y40"
+        android:textColor="@color/colorTextView_01"
+        android:textSize="@dimen/y28"/>
+
+    <TextView
+        android:id="@+id/tv_download_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y88"
+        android:gravity="center"
+        android:textColor="@color/colorTextView_14"
+        android:textSize="@dimen/y36"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_download"
+        android:layout_width="@dimen/x448"
+        android:layout_height="@dimen/y88"
+        android:layout_below="@id/tv_download_finish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y88"
+        android:background="@drawable/shape_blue_background"
+        android:gravity="center"
+        android:text="@string/string_file_download_start"
+        android:textColor="@color/colorTextView_05"
+        android:textSize="@dimen/y36"/>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y74"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pbar_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/x604"
+            android:layout_height="@dimen/y16"
+            android:max="100"
+            android:progressDrawable="@drawable/shape_message_file_download_progress"/>
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="@dimen/y44"
+            android:layout_height="@dimen/y44"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@id/pbar_progress"
+            android:src="@mipmap/icon_download_cancel"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y44"
+        android:textColor="@color/colorTextView_09"
+        android:textSize="@dimen/y28"/>
+</RelativeLayout>

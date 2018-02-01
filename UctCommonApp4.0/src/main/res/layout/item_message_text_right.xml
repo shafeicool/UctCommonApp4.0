@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:cq="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/y20">
+
+    <TextView
+        android:id="@+id/tv_sendtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/time_bg"
+        android:gravity="center"
+        android:textColor="@color/colorTextView_05"
+        android:textSize="@dimen/y24"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10">
+
+        <ImageButton
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/y100"
+            android:layout_height="@dimen/y100"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_message_head"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_userhead"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:maxLines="1"
+            android:textColor="@color/colorTextView_02"
+            android:textSize="@dimen/y24"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_marginLeft="@dimen/x85"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtn_sendStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x10"
+                android:visibility="invisible"/>
+
+            <com.ptyt.uct.widget.MessageTextLayout
+                android:id="@+id/btn_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                cq:maxWidth="@dimen/x400"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

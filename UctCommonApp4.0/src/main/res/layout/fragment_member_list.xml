@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/view_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_memberList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@drawable/shape_round_corner_stroke"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/y10"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:paddingLeft="@dimen/x16"
+            android:textColorHint="@color/colorTextView_03"
+            android:textSize="@dimen/y28"
+            />
+
+        <TextView
+            android:id="@+id/tv_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_search"
+            android:layout_marginLeft="@dimen/y30"
+            android:layout_marginRight="@dimen/y30"
+            android:textColor="@color/colorTextView_03"
+            android:textSize="@dimen/y28"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_below="@id/tv_online"
+            android:layout_marginLeft="@dimen/y30"
+            android:layout_marginRight="@dimen/y30"
+            android:layout_marginTop="@dimen/y20"
+            android:background="@color/colorline04"/>
+
+        <LinearLayout
+            android:id="@+id/ll_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_search"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/shape_round_corner_stroke"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x30"
+            android:paddingLeft="@dimen/x22"
+            android:paddingRight="@dimen/x22"
+            android:paddingTop="@dimen/x20"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_selectedMemberNum"
+                style="@style/view_wrap_content"
+                android:text="已选组员(0)"
+                android:textColor="@color/colorTextView_09"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_selectedMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y12"
+                android:maxHeight="@dimen/y240"
+                android:minHeight="@dimen/y60">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_line"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/tv_current_word"
+                android:layout_toRightOf="@+id/tv_current_word"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tv_current_word"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="#88A3A3A3"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <include layout="@layout/fragment_search"/>
+</RelativeLayout>

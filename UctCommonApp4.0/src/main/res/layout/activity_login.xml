@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/y32"
+              android:background="@mipmap/bg"
+              tools:context="com.ptyt.uct.activity.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_login_pbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginLeft="@dimen/x48"
+        android:layout_marginRight="@dimen/x48">
+
+        <LinearLayout
+            android:id="@+id/username_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y60"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="@dimen/y400"
+                    android:layout_height="@dimen/y400"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/logo_bg"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/logo_ptyt"/>
+            </FrameLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/username_login_et"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:ems="25"
+                    android:hint="@string/prompt_username"
+                    android:textSize="15sp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="15"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/password_login_et"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="wrap_content"
+                    android:ems="25"
+                    android:hint="@string/prompt_password"
+                    android:textSize="15sp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:maxLength="16"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/ip_login_et"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789."
+                    android:ems="25"
+                    android:hint="@string/prompt_ip"
+                    android:textSize="15sp"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/signin_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y60"
+                android:background="@mipmap/login_btn"
+                android:paddingTop="@dimen/y34"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="@string/string_sign_in"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

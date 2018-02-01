@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_message_file_background_right"
+                android:padding="@dimen/x24">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/x190"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="sdfsdfsdfsdfsdfsdfsdfsdfsdfsdf"
+        android:textColor="@color/colorTextView_04"
+        android:textSize="@dimen/y30"/>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/y14"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorTextView_02"
+        android:textSize="@dimen/y24"/>
+
+    <ProgressBar
+        android:id="@+id/pbar_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y8"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_alignRight="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/y27"
+        android:max="100"
+        android:progressDrawable="@drawable/shape_message_file_download_progress"/>
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/y98"
+        android:layout_height="@dimen/y98"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x42"/>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.ptyt.uct.activity.SettingsFeedbackActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y60"
+        android:layout_marginLeft="@dimen/x32"
+        android:layout_marginRight="@dimen/x32"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/shape_message_bottom_fuc"
+        android:padding="@dimen/y24">
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/string_settings_about_feedback_hint"
+            android:textColorHint="@color/colorTextView_17"
+            android:maxLines="10"
+            android:minHeight="@dimen/y550"
+            android:minLines="1"
+            android:textColor="@color/colorTextView_01"
+            android:textSize="@dimen/y28"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="@dimen/x448"
+        android:layout_height="@dimen/y88"
+        android:background="@drawable/shape_blue_background"
+        android:gravity="center"
+        android:text="@string/string_settings_about_feedback_submit"
+        android:textColor="@color/colorTextView_05"
+        android:textSize="@dimen/y36"/>
+
+</LinearLayout>

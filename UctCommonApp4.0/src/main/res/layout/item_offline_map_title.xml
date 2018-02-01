@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="@dimen/y80"
+    android:background="#d2d2d2">
+
+    <TextView
+        android:id="@+id/tv_titleItem"
+        style="@style/tv2et_wrap_content_16sp"
+        android:textColor="@color/colorTextView_01"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="title"/>
+</RelativeLayout>

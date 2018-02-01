@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/y30"
+    android:paddingBottom="@dimen/y30"
+    android:paddingLeft="@dimen/x30"
+    android:background="@drawable/selector_press_background"
+    >
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/y90"
+        android:layout_height="@dimen/y90"
+        android:src="@mipmap/ic_group_portrait" />
+    <com.ptyt.uct.widget.MarqueeTextView
+        android:id="@+id/tv_title_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/y32"
+        android:textColor="@color/colorTextView_10"
+        android:layout_marginLeft="@dimen/y30"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_toLeftOf="@+id/iv_unfold"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/tv_recentTalkTime"
+        style="@style/tv2et_wrap_content_14sp"
+        android:text="昨天"
+        android:textColor="@color/colorTextView_08"
+        android:layout_toLeftOf="@+id/iv_unfold"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/y10"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/iv_unfold"
+        android:layout_width="@dimen/x90"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/x30"
+        android:src="@mipmap/ic_pull_down" />
+    <ImageView
+        android:id="@+id/iv_lockItem"
+        android:layout_width="@dimen/x24"
+        android:layout_height="@dimen/x24"
+        android:src="@mipmap/ic_group_lock"
+        android:visibility="visible"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

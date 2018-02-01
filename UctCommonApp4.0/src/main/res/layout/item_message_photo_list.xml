@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/y6">
+    <ImageView
+        android:id="@+id/photo_image_iv"
+        android:layout_width="@dimen/y170"
+        android:layout_height="@dimen/y170"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/photo_select_iv"
+        android:layout_width="@dimen/y60"
+        android:layout_height="@dimen/y60"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_marginLeft="@dimen/x10"
+        android:scaleType="matrix"/>
+
+    <TextView
+        android:id="@+id/photo_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/y20"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/x6"
+        android:textColor="@color/colorTextView_05"/>
+
+    <ImageView
+        android:id="@+id/photo_video_iv"
+        android:layout_width="@dimen/y24"
+        android:layout_height="@dimen/y24"
+        android:layout_toLeftOf="@id/photo_time_tv"
+        android:layout_marginRight="@dimen/x6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y6"/>
+</RelativeLayout>

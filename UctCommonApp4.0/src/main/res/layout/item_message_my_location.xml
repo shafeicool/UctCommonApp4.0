@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/item_file_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="@drawable/selector_press_background"
+                android:paddingLeft="@dimen/y32"
+                android:paddingRight="@dimen/y32"
+                android:paddingTop="@dimen/x15">
+
+    <ImageView
+        android:id="@+id/location_select_iv"
+        android:layout_width="@dimen/y72"
+        android:layout_height="@dimen/y72"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y38"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_toLeftOf="@id/location_select_iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="sdgsfgsdfgsdfghsdfjkdfgjkdfklgdljkfgjldfjlgkjdlfgjldkfjgkljdfgkljdlkfgjkldfjgkl"
+        android:textColor="@color/colorTextView_04"
+        android:textSize="@dimen/y28"/>
+
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y32"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/name_tv"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_toLeftOf="@id/location_select_iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="sdfsdfsdffffffsdfgarijtgioerjgioejhriogheruihguitgrthyrtiyrtuh"
+        android:textColor="@color/colorTextView_02"
+        android:textSize="@dimen/y24"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_below="@id/location_tv"
+        android:layout_marginTop="@dimen/y15"
+        android:background="@color/colorline02"/>
+
+
+</RelativeLayout>

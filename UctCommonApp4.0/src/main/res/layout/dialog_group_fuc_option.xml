@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/frame3"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/iv_group_people_dialog"
+        android:layout_width="@dimen/y76"
+        android:layout_height="@dimen/y76"
+        android:src="@drawable/selector_dialog_group"
+        />
+
+    <ImageView
+        android:id="@+id/iv_message_dialog"
+        android:layout_width="@dimen/y76"
+        android:layout_height="@dimen/y76"
+        android:src="@drawable/selector_dialog_message"/>
+
+    <ImageView
+        android:id="@+id/iv_location_dialog"
+        android:layout_width="@dimen/y76"
+        android:layout_height="@dimen/y76"
+        android:src="@drawable/selector_dialog_map"/>
+
+    <ImageView
+        android:id="@+id/iv_lock_dialog"
+        android:layout_width="@dimen/y76"
+        android:layout_height="@dimen/y76"
+        android:src="@drawable/selector_dialog_lock"/>
+
+    <ImageView
+        android:id="@+id/iv_delete_group"
+        android:layout_width="@dimen/y76"
+        android:layout_height="@dimen/y76"
+        android:src="@drawable/selector_dialog_delete_group"/>
+</LinearLayout>
